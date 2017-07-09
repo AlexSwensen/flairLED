@@ -31,6 +31,7 @@ dependencies:
   pre:
     - sudo apt-get update
     - sudo apt-get --assume-yes install google-chrome-stable libxss1 libappindicator1 libindicator7
+    # Grab google chrome from webnicer (who holds a nice archive of recent versions of google chrome)
     - wget https://github.com/webnicer/chrome-downloads/raw/master/x64.deb/google-chrome-stable_59.0.3071.115-1_amd64.deb
     - sudo dpkg -i ./google-chrome*.deb
     - sudo apt-get install -f
@@ -80,4 +81,4 @@ test:
 notify:
   webhooks:
     # A list of hashes representing hooks. Only the url field is supported.
-    - url: https://someurl.com/hooks/circle
+#    - url: https://someurl.com/hooks/circle

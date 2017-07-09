@@ -3,9 +3,9 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TestComponent } from './test/test.component';
-import { WelcomeComponent } from './welcome/welcome.component';
-import { ButtonComponent } from './button/button.component';
+import { TestComponent } from './pages/test/test.component';
+import { WelcomeComponent } from './pages/welcome/welcome.component';
+import { ButtonComponent } from './components/button/button.component';
 
 @NgModule({
   declarations: [

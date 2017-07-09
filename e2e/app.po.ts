@@ -1,8 +1,8 @@
 import { browser, by, element } from 'protractor';
 
 export class FlairLEDPage {
-  navigateTo() {
-    return browser.get('/');
+  navigateTo(location?: string) {
+    return browser.get(location || '/');
   }
 
   getParagraphText() {

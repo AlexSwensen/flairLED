@@ -31,6 +31,9 @@ dependencies:
   pre:
     - sudo apt-get update
     - sudo apt-get --assume-yes install google-chrome-stable libxss1 libappindicator1 libindicator7
+    - wget https://github.com/webnicer/chrome-downloads/raw/master/x64.deb/google-chrome-stable_59.0.3071.115-1_amd64.deb
+    - sudo dpkg -i ./google-chrome*.deb
+    - sudo apt-get install -f
     - sudo apt-get install -y lcov
     - gem install coveralls coveralls-lcov
     - npm install -g npm@latest
@@ -41,8 +44,8 @@ dependencies:
 
 
 
-  # we automatically cache and restore many dependencies between
-  # builds. If you need to, you can add custom paths to cache:
+# we automatically cache and restore many dependencies between
+# builds. If you need to, you can add custom paths to cache:
 #  cache_directories:
 #    - "custom_1"   # relative to the build directory
 #    - "~/custom_2" # relative to the user's home directory

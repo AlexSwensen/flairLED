@@ -1,4 +1,5 @@
 import { FlairLEDPage } from './app.po';
+import { browser, by, element } from 'protractor';
 
 describe('flair-led App', () => {
   let page: FlairLEDPage;

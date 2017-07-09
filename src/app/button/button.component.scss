@@ -1,3 +1,13 @@
 :host {
-  padding: 50px;
+  button {
+    background-color: #039bff;
+    border: 0;
+    border-radius: 2px;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    &:active {
+      background-color: #0365b2;
+    }
+  }
 }

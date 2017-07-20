@@ -3,7 +3,7 @@ version: 2
 ## Customize the test machine
 jobs:
   build:
-      working_directory: ~/electron-angular2-starter
+      working_directory: ~/flairLED
       docker:
         - image: circleci/node:6.11.0-browsers
           environment:

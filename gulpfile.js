@@ -7,7 +7,7 @@ gulp.task('default', ['lint']);
 gulp.task('lint', ['lint:js', 'lint:styles']);
 
 gulp.task('lint:js', function () {
-  return gulp.src(['src/**/*.js', 'e2e/**/*.js'])
+  return gulp.src(['src/**/*.ts', 'e2e/**/*.ts'])
     .pipe(eslint({
       configFile: './.eslintrc.js',
       quiet: false

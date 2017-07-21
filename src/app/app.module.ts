@@ -7,7 +7,7 @@ import { TestComponent } from './pages/test/test.component';
 import { WelcomeComponent } from './pages/welcome/welcome.component';
 import { ButtonComponent } from './components/button/button.component';
 import { ColorPickerComponent } from './components/color-picker/color-picker.component';
-import { SerialService } from './serial.service';
+import { SerialService } from './services/serial.service';
 
 @NgModule({
   declarations: [

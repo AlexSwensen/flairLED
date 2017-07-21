@@ -5,4 +5,4 @@ interface NodeModule {
 }
 declare var SerialPort: any;
 
-// declare var jQuery: any;
+declare var jQuery: any;

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ElementRef, Renderer2 } from '@angular/core';
 
 @Component({
   selector: 'app-color-picker',
@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./color-picker.component.scss']
 })
 export class ColorPickerComponent implements OnInit {
-
-  constructor() { }
+  element: ElementRef;
+  constructor(element: ElementRef) {
+    this.element = element;
+  }
 
   ngOnInit() {
+    console.log('element', this.element);
   }
 
 }

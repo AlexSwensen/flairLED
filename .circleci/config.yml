@@ -36,9 +36,9 @@ jobs:
         - run:
             name: lint
             command: gulp lint
-        - run:
-            name: unit-tests
-            command: ng test --single-run
-        - run:
-            name: e2e-tests
-            command: ng e2e
+#        - run:
+#            name: unit-tests
+#            command: ng test --single-run
+#        - run:
+#            name: e2e-tests
+#            command: ng e2e

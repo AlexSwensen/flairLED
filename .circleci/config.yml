@@ -3,7 +3,7 @@ version: 2
 ## Customize the test machine
 jobs:
   build:
-      working_directory: ~/electron-angular2-starter
+      working_directory: ~/flairLED
       docker:
         - image: circleci/node:6.11.0-browsers
           environment:
@@ -13,6 +13,10 @@ jobs:
 #        - run:
 #            name: update-npm
 #            command: sudo npm install -g npm@5.2.0
+
+        - run:
+            name: install-gulp-cli
+            command: sudo npm install -g gulp
         - run:
             name: install-angular-cli
             command: sudo npm install -g @angular/cli
@@ -28,9 +32,13 @@ jobs:
 #        - run:
 #            name: install-gem-dependencies
 #            command: gem install coveralls coveralls-lcov
+
         - run:
-            name: unit-tests
-            command: ng test --single-run
-        - run:
-            name: e2e-tests
-            command: ng e2e
+            name: lint
+            command: gulp lint
+#        - run:
+#            name: unit-tests
+#            command: ng test --single-run
+#        - run:
+#            name: e2e-tests
+#            command: ng e2e

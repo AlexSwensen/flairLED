@@ -15,7 +15,6 @@
     "property-case"                      : "lower",
     "property-no-unknown"                : true,
     "unit-no-unknown"                    : true,
-    "stylelint-disable-reason"           : "always-before",
     "indentation"                        : 2
   }
 }

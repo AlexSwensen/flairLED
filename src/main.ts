@@ -9,7 +9,7 @@ declare var SerialPort: any;
 
 SerialPort.list(function(err, ports) {
   ports.forEach(function(port) {
-    console.log(port)
+
   });
 
 });

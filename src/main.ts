@@ -4,7 +4,16 @@ import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { AppModule } from './app/app.module';
 import { environment } from './environments/environment';
 
-import { SerialPort } from 'serialport';
+
+declare var SerialPort: any;
+
+SerialPort.list(function(err, ports) {
+  ports.forEach(function(port) {
+    console.log(port)
+  });
+
+});
+
 if (environment.production) {
   enableProdMode();
 }

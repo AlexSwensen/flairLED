@@ -7,6 +7,8 @@ import { TestComponent } from './pages/test/test.component';
 import { WelcomeComponent } from './pages/welcome/welcome.component';
 import { ButtonComponent } from './components/button/button.component';
 
+import { FormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,6 +18,7 @@ import { ButtonComponent } from './components/button/button.component';
   ],
   exports: [],
   imports: [
+    FormsModule,
     BrowserModule,
     AppRoutingModule
   ],

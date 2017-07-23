@@ -1,4 +1,6 @@
-<app-button [text]="buttonText"></app-button>
+<app-button [text]="buttonText" (clicked)="buttonPressed()"></app-button>
 
+<input type="color" [(ngModel)]="color">
 
+<!--<app-color-picker></app-color-picker>-->
 <router-outlet></router-outlet>

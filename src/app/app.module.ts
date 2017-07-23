@@ -9,6 +9,8 @@ import { ButtonComponent } from './components/button/button.component';
 import { ColorPickerComponent } from './components/color-picker/color-picker.component';
 import { SerialService } from './services/serial.service';
 
+import { FormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,6 +21,7 @@ import { SerialService } from './services/serial.service';
   ],
   exports: [],
   imports: [
+    FormsModule,
     BrowserModule,
     AppRoutingModule
   ],
